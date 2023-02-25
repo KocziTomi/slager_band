@@ -1,7 +1,13 @@
 <div class="card">
-    <h5 class="card-header">{{ include.header }}</h5>
+    <div class="card-header d-flex align-items-center">
+        <div>{{ include.header }}</div>
+        <div class="ms-auto">
+            {% if include.button %} {% include {{ include.button }} %} {% endif
+            %}
+        </div>
+    </div>
     <div class="card-body">
-        <h5 class="card-title">{{ include.title }}</h5>
+        <div class="card-title">{{ include.title }}</div>
         <p class="card-text">{{ include.text }}</p>
     </div>
 </div>
