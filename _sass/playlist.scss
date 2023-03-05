@@ -40,13 +40,12 @@ a:visited {
     border: 0;
 }
 #simp {
-    max-width: 600px;
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 auto;
     font-size: 14px;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
     text-align: initial;
     line-height: initial;
-    background: #17212b;
-    color: #ddd;
     margin: 0 auto;
     border-radius: 6px;
     overflow: hidden;
@@ -80,7 +79,6 @@ a:visited {
     width: 32px;
     height: 32px;
     background: none;
-    color: #ddd;
     padding: 7px;
     cursor: pointer;
     border: 0;
@@ -223,11 +221,17 @@ a:visited {
     max-height: 0;
 }
 /* playlist */
+#simp .simp-playlist {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+}
+
 #simp ul {
     margin: 5px 0 0;
     padding: 0;
     list-style: none;
-    max-height: 245px;
+    flex: 1 1 1px;
 }
 #simp ul li {
     white-space: nowrap;
@@ -242,10 +246,10 @@ a:visited {
     padding-bottom: 13px;
 }
 #simp ul li:nth-child(odd) {
-    background: #0e1621;
+    background: #b8b8b879;
 }
 #simp ul li:hover {
-    background: #242f3d;
+    background: #a7c0e2;
 }
 #simp ul li.simp-active {
     background: #4082bc;
