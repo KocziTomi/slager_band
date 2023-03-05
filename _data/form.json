@@ -1,0 +1,8 @@
+{
+    "header": "Kapcsolat",
+    "name": "Név",
+    "email": "Email cím",
+    "subject": "Tárgy",
+    "message": "Üzenet",
+    "send": "Küldés"
+}

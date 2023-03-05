@@ -1,16 +1,7 @@
 <form id="contact_form" name="contact_form" method="post">
-    <div class="mb-5">
-        <label for="message">Message</label>
-        <textarea
-            class="form-control"
-            id="message"
-            name="message"
-            rows="5"
-        ></textarea>
-    </div>
-    <div class="mb-5 row">
+    <div class="mb-2 row">
         <div class="col">
-            <label>Your Name:</label>
+            <label>{{ include.name }}:</label>
             <input
                 type="text"
                 required
@@ -21,7 +12,7 @@
             />
         </div>
         <div class="col">
-            <label for="email_addr">Your Email:</label>
+            <label for="email_addr">{{ include.email }}:</label>
             <input
                 type="email"
                 required
@@ -29,11 +20,31 @@
                 class="form-control"
                 id="email_addr"
                 name="email"
-                placeholder="name@example.com"
             />
         </div>
     </div>
+    <div class="mb-2">
+        <label for="message">{{ include.subject }}:</label>
+        <input
+            type="text"
+            maxlength="50"
+            class="form-control"
+            id="subject"
+            name="subject"
+        />
+    </div>
+    <div class="mb-5">
+        <label for="message">{{ include.message }}:</label>
+        <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="5"
+        ></textarea>
+    </div>
     <div class="d-grid">
-        <button type="submit" class="btn btn-success">Post</button>
+        <button type="submit" class="btn btn-success">
+            {{ include.send }}
+        </button>
     </div>
 </form>
