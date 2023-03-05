@@ -1,0 +1,33 @@
+.col-carousel {
+    margin: 0;
+}
+
+.owl-prev span,
+.owl-next span {
+    color: #fff;
+}
+
+.owl-prev span:hover,
+.owl-next span:hover {
+    color: #8199a3;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.owl-prev {
+    left: 7px;
+}
+
+.owl-next {
+    right: 7px;
+}
+
+button:focus,
+button:active {
+    outline: none;
+}
