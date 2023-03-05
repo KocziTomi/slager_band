@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="grid">
+        {% for member in site.data.members.members %}
+        <div class="d-flex inner">
+            <div class="col-2">
+                <img
+                    src="{{member.picture.url}}"
+                    alt="{{member.picture.alt}}"
+                    width="100"
+                    class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+                />
+            </div>
+            <div class="col mx-3">
+                <h5 class="mb-2">{{member.name}}</h5>
+                <h6 class="mb-3">{{member.instrument}}</h6>
+                <p class="text-justify">{{member.text}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

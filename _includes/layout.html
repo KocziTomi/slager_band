@@ -8,11 +8,16 @@
             <div class="col-8">
                 <div class="row">
                     <div class="">
-                        {% include cards/text-card.html
-                        header=site.data.about.header
-                        title=site.data.about.title text=site.data.about.text %}
+                        {% include cards/demo-card.html
+                        header=site.data.demo.header %}
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                {% include cards/member-card.html
+                header=site.data.members.header %}
             </div>
         </div>
         <div class="row mt-4">
@@ -29,8 +34,8 @@
                 send=site.data.form.send %}
             </div>
             <div class="col">
-                {% include cards/text-card.html header=site.data.about.header
-                title=site.data.about.title text=site.data.about.text %}
+                {% include cards/text-card.html header=site.data.contact.header
+                %}
             </div>
         </div>
     </div>

@@ -1,1 +1,50 @@
-{}
+{
+    "header": "Tagok",
+    "members": [
+        {
+            "picture": {
+                "url": "https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg",
+                "alt": "1"
+            },
+            "name": "Manuella Nevoresky",
+            "instrument": "Dob",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget pulvinar arcu, a vulputate risus. Aenean lobortis pretium lorem sollicitudin ornare. Sed vitae augue mollis, viverra dui et, consequat diam."
+        },
+        {
+            "picture": {
+                "url": "https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg",
+                "alt": "1"
+            },
+            "name": "Manuella Nevoresky",
+            "instrument": "Dob",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget pulvinar arcu, a vulputate risus. Aenean lobortis pretium lorem sollicitudin ornare. Sed vitae augue mollis, viverra dui et, consequat diam."
+        },
+        {
+            "picture": {
+                "url": "https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg",
+                "alt": "1"
+            },
+            "name": "Manuella Nevoresky",
+            "instrument": "Dob",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget pulvinar arcu, a vulputate risus. Aenean lobortis pretium lorem sollicitudin ornare. Sed vitae augue mollis, viverra dui et, consequat diam."
+        },
+        {
+            "picture": {
+                "url": "https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg",
+                "alt": "1"
+            },
+            "name": "Manuella Nevoresky",
+            "instrument": "Dob",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget pulvinar arcu, a vulputate risus. Aenean lobortis pretium lorem sollicitudin ornare. Sed vitae augue mollis, viverra dui et, consequat diam."
+        },
+        {
+            "picture": {
+                "url": "https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg",
+                "alt": "1"
+            },
+            "name": "Manuella Nevoresky",
+            "instrument": "Dob",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget pulvinar arcu, a vulputate risus. Aenean lobortis pretium lorem sollicitudin ornare. Sed vitae augue mollis, viverra dui et, consequat diam."
+        }
+    ]
+}

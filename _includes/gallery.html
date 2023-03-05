@@ -1,34 +1,9 @@
 <div class="col-12 col-carousel">
     <div class="owl-carousel carousel-main">
+        {% for elem in site.data.gallery.media.pictures %}
         <div>
-            <img
-                src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=1"
-            />
+            <img src="{{elem.url}}" alt="{{elem.alt}}" />
         </div>
-        <div>
-            <img
-                src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=2"
-            />
-        </div>
-        <div>
-            <img
-                src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=3"
-            />
-        </div>
-        <div>
-            <img
-                src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=4"
-            />
-        </div>
-        <div>
-            <img
-                src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=5"
-            />
-        </div>
-        <div>
-            <img
-                src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=6"
-            />
-        </div>
+        {% endfor %}
     </div>
 </div>
