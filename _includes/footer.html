@@ -1,37 +1,67 @@
 <!-- Footer -->
 <footer class="bg-dark text-center text-white mt-5">
     <!-- Grid container -->
-    <div class="container p-4">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-            <!-- Facebook -->
-            <a
-                class="btn btn-outline-light btn-floating m-1"
-                href="#!"
-                role="button"
-                ><i class="fa fa-facebook-f"></i
-            ></a>
+    <div class="container px-5 py-4">
+        <!-- Div: Social media and contact info -->
+        <div
+            class="mb-4 px-5 mx-5 d-flex align-items-center justify-content-between"
+        >
+            <!-- Section: Social media -->
+            <section>
+                <!-- Facebook -->
+                <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    href="#!"
+                    role="button"
+                    ><i class="fa fa-facebook-f icon-w-16"></i
+                ></a>
 
-            <!-- Youtube -->
-            <a
-                class="btn btn-outline-light btn-floating m-1"
-                href="#!"
-                role="button"
-                ><i class="fa fa-youtube"></i
-            ></a>
+                <!-- Youtube -->
+                <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    href="#!"
+                    role="button"
+                    ><i class="fa fa-youtube icon-w-16"></i
+                ></a>
 
-            <!-- Instagram -->
-            <a
-                class="btn btn-outline-light btn-floating m-1"
-                href="#!"
-                role="button"
-                ><i class="fa fa-instagram"></i
-            ></a>
-        </section>
-        <!-- Section: Social media -->
+                <!-- Instagram -->
+                <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    href="#!"
+                    role="button"
+                    ><i class="fa fa-instagram icon-w-16"></i
+                ></a>
+            </section>
+
+            <!-- Section: Contact info -->
+            <section class="d-flex">
+                <!-- Email -->
+                <span class="d-flex align-items-center me-4">
+                    <a
+                        class="btn btn-outline-light btn-floating m-1"
+                        href="#!"
+                        role="button"
+                        ><i class="fa fa-envelope icon-w-16"></i
+                    ></a>
+                    <div class="ps-1">{{site.data.contact.email}}</div>
+                </span>
+
+                <!--Phone -->
+                <span class="d-flex align-items-center">
+                    <a
+                        class="btn btn-outline-light btn-floating m-1"
+                        href="#!"
+                        role="button"
+                        ><i class="fa fa-phone icon-w-16"></i
+                    ></a>
+                    <div class="ps-1">{{site.data.contact.phone}}</div>
+                </span>
+            </section>
+        </div>
+        <!-- Div: Social media and contact info -->
 
         <!-- Section: Text -->
-        <section class="mb-4">
+        <section class="mb-4 px-5 mx-5">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                 distinctio earum repellat quaerat voluptatibus placeat nam,
