@@ -1,8 +1,8 @@
 <div class="col-12 col-carousel">
     <div class="owl-carousel carousel-main">
-        {% for elem in site.data.gallery.media.pictures %}
+        {% for picture in site.data.gallery.media.pictures %}
         <div>
-            <img src="{{elem.url}}" alt="{{elem.alt}}" />
+            <img src="{{picture.url}}" alt="{{picture.alt}}" />
         </div>
         {% endfor %}
     </div>
