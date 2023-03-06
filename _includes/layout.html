@@ -27,15 +27,11 @@
             </div>
         </div>
         <div class="row mt-4">
-            <div class="col-9">
+            <div class="col">
                 {% include cards/form-card.html header=site.data.form.header
                 name=site.data.form.name email=site.data.form.email
                 subject=site.data.form.subject message=site.data.form.message
                 send=site.data.form.send %}
-            </div>
-            <div class="col-3">
-                {% include cards/contact-card.html
-                header=site.data.contact.header %}
             </div>
         </div>
     </div>
