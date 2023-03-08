@@ -229,9 +229,18 @@ a:visited {
 }
 /* playlist */
 #simp .simp-playlist {
-    flex: 1 1 auto;
-    display: flex;
-    flex-flow: column;
+    display: block;
+    height: 400px;
+    overflow: auto;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #simp .simp-playlist {
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: column;
+    }
 }
 
 #simp ul {
@@ -241,6 +250,7 @@ a:visited {
     flex: 1 1 1px;
 }
 #simp ul li {
+    border-bottom: 1px solid #b9745b;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

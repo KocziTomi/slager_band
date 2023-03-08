@@ -1,49 +1,58 @@
 <form id="contact_form" name="contact_form" method="post">
     <div class="mb-2 row">
         <div class="col">
-            <label>{{ include.name }}:</label>
+            <label class="text-header bold">{{ include.name }}:</label>
             <input
                 type="text"
                 required
                 maxlength="50"
-                class="form-control"
+                class="form-control rounded-0 bg-input border-0 rounded-0"
                 id="name"
                 name="name"
             />
         </div>
         <div class="col">
-            <label for="email_addr">{{ include.email }}:</label>
+            <label for="email_addr" class="text-header bold"
+                >{{ include.email }}:</label
+            >
             <input
                 type="email"
                 required
                 maxlength="50"
-                class="form-control"
+                class="form-control rounded-0 bg-input border-0 rounded-0"
                 id="email_addr"
                 name="email"
             />
         </div>
     </div>
     <div class="mb-2">
-        <label for="message">{{ include.subject }}:</label>
+        <label for="message" class="text-header bold"
+            >{{ include.subject }}:</label
+        >
         <input
             type="text"
             maxlength="50"
-            class="form-control"
+            class="form-control rounded-0 bg-input border-0 rounded-0"
             id="subject"
             name="subject"
         />
     </div>
     <div class="mb-5">
-        <label for="message">{{ include.message }}:</label>
+        <label for="message" class="text-header bold"
+            >{{ include.message }}:</label
+        >
         <textarea
-            class="form-control"
+            class="form-control rounded-0 bg-input border-0"
             id="message"
             name="message"
             rows="5"
         ></textarea>
     </div>
     <div class="d-flex justify-content-center">
-        <button type="submit" class="btn btn-button px-3 py-2 rounded-0">
+        <button
+            type="submit"
+            class="btn btn-button px-3 py-2 rounded-0 border-0 btn-outlined"
+        >
             {{ include.send }}
         </button>
     </div>

@@ -1,7 +1,9 @@
 <div class="container-fluid py-2">
-    <div class="grid">
+    <div
+        class="d-flex justify-content-between flex-wrap flex-column flex-lg-row"
+    >
         {% for member in site.data.members.members %}
-        <div class="d-flex inner">
+        <div class="d-flex inner mb-4">
             <div class="col-2 grow">
                 <img
                     src="{{member.picture.url}}"
@@ -11,8 +13,8 @@
                 />
             </div>
             <div class="col mx-3">
-                <h5 class="mb-2">{{member.name}}</h5>
-                <h6 class="mb-3 text-header">{{member.instrument}}</h6>
+                <h5 class="mb-2 bold text-header">{{member.name}}</h5>
+                <h6 class="mb-3">{{member.instrument}}</h6>
                 <p class="text-justify">{{member.text}}</p>
             </div>
         </div>

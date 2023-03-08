@@ -1,12 +1,14 @@
-<div class="container d-flex justify-content-center align-items-start">
+<div
+    class="container d-flex justify-content-center align-items-start main-font"
+>
     <div class="container-fluid h-100">
-        <div class="row h-100">
+        <div class="d-flex flex-column flex-lg-row h-100">
             <div class="col">
                 {% include cards/text-card.html header=site.data.about.header
                 title=site.data.about.title text=site.data.about.text %}
             </div>
-            <div class="col-8">
-                <div class="row h-100">
+            <div class="col-lg-8">
+                <div class="row h-100 mt-5 mt-lg-0 ms-lg-4">
                     <div class="">
                         {% include cards/playlist-card.html
                         header=site.data.playlist.header %}
