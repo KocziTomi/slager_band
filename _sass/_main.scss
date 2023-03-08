@@ -4,14 +4,6 @@
 @import 'bootstrap-5.3.0/bootstrap-5.3.0-alpha1/scss/bootstrap.scss';
 
 /* Custom Styles */
-
-.bg-img {
-    background-image: url('{{site.baseurl}}/assets/images/background.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .custom-font {
     font-family: 'Kavoon';
 }
