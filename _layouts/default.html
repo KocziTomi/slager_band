@@ -6,7 +6,7 @@
         <link
             rel="shortcut icon"
             type="image/png"
-            href="/assets/images/favicon.ico"
+            href="{{ '/assets/images/favicon.ico' | relative_url }}"
         />
         <link
             rel="stylesheet"
@@ -53,7 +53,13 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         ></script>
-        <script type="text/javascript" src="/assets/js/gallery.js"></script>
-        <script type="text/javascript" src="/assets/js/playlist.js"></script>
+        <script
+            type="text/javascript"
+            src="{{ '/assets/js/gallery.js' | relative_url }}"
+        ></script>
+        <script
+            type="text/javascript"
+            src="{{ '/assets/js/playlist.js' | relative_url }}"
+        ></script>
     </body>
 </html>
