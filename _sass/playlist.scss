@@ -262,9 +262,7 @@ a:visited {
 #simp ul li:last-child {
     padding-bottom: 13px;
 }
-#simp ul li:nth-child(odd) {
-    //background: #b8b8b879;
-}
+
 #simp ul li:hover {
     transition: background-color 0.2s ease;
     background: #cfa96d;
