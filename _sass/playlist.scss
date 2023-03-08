@@ -12,6 +12,7 @@ button {
 a,
 a:hover,
 a:visited {
+    transition: color 0.5s ease;
     color: #ddd;
     text-decoration: none;
 }
@@ -47,7 +48,7 @@ a:visited {
     text-align: initial;
     line-height: initial;
     margin: 0 auto;
-    border-radius: 6px;
+    //border-radius: 6px;
     overflow: hidden;
 }
 #simp .simp-album {
@@ -72,7 +73,7 @@ a:visited {
     color: #6c7883;
 }
 #simp .simp-controls {
-    padding: 15px;
+    padding: 15px 0px;
 }
 #simp .simp-controls button {
     font-size: 130%;
@@ -81,15 +82,21 @@ a:visited {
     background: none;
     padding: 7px;
     cursor: pointer;
-    border: 0;
-    border-radius: 3px;
+    outline: 4px solid #cfa96d;
+    //border-radius: 3px;
+    color: white;
+    background-color: #5c4a3b;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 #simp .simp-controls button[disabled] {
-    color: #636469;
+    //color: #83858c;
+    opacity: 0.7;
     cursor: initial;
 }
 #simp .simp-controls button:not([disabled]):hover {
-    background: #4082bc;
+    transition: background-color 0.2s ease;
+    background: #cfa96d;
     color: #fff;
 }
 #simp .simp-controls .simp-prev,
@@ -159,7 +166,7 @@ a:visited {
     z-index: 2;
 }
 #simp .simp-controls input[type='range']::-webkit-slider-runnable-track {
-    background: rgba(183, 197, 205, 0.66);
+    background: #5c4a3b;
     height: 5px;
     border-radius: 2.5px;
     transition: box-shadow 0.3s ease;
@@ -173,10 +180,10 @@ a:visited {
     position: relative;
 }
 #simp .simp-controls .simp-load .simp-progress::-webkit-slider-runnable-track {
-    background: #2f3841;
+    background: #5c4a3b;
 }
 #simp .simp-controls .simp-load .simp-progress::-moz-range-track {
-    background: #2f3841;
+    background: #5c4a3b;
 }
 #simp
     .simp-controls
@@ -246,13 +253,15 @@ a:visited {
     padding-bottom: 13px;
 }
 #simp ul li:nth-child(odd) {
-    background: #b8b8b879;
+    //background: #b8b8b879;
 }
 #simp ul li:hover {
-    background: #a7c0e2;
+    transition: background-color 0.2s ease;
+    background: #cfa96d;
 }
 #simp ul li.simp-active {
-    background: #4082bc;
+    transition: background-color 0.2s ease;
+    background: #5c4a3b;
     color: #fff;
 }
 #simp ul li .simp-desc {
@@ -264,17 +273,17 @@ a:visited {
 #simp ul {
     overflow-y: auto;
     overflow-x: hidden;
-    scrollbar-color: #73797f #2f3841;
+    scrollbar-color: #cfa96d #5c4a3b;
 }
 #simp ul::-webkit-scrollbar-track {
-    background-color: #2f3841;
+    background-color: #5c4a3b;
 }
 #simp ul::-webkit-scrollbar {
     width: 6px;
-    background-color: #2f3841;
+    background-color: #5c4a3b;
 }
 #simp ul::-webkit-scrollbar-thumb {
-    background-color: #73797f;
+    background-color: #cfa96d;
 }
 /* progress animation */
 @-webkit-keyframes audio-progress {
