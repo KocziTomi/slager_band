@@ -1,5 +1,5 @@
 ---
-title: My First Page
+title: Sláger band
 layout: default
 CTA: button.html
 ---
