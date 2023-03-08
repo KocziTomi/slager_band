@@ -1,13 +1,6 @@
-<form
-    id="contact_form"
-    name="contact_form"
-    method="post"
-    accept-charset="UTF-8"
-    action="https://formspree.io/f/mdovdnyy"
-    enctype="text/plain"
->
+<form action="https://formspree.io/f/mdovdnyy" method="POST">
     <div class="mb-2 row">
-        <div class="col">
+        <!--         <div class="col">
             <label class="text-header bold">{{ include.name }}:</label>
             <input
                 type="text"
@@ -17,7 +10,7 @@
                 id="name"
                 name="name"
             />
-        </div>
+        </div> -->
         <div class="col">
             <label for="email_addr" class="text-header bold"
                 >{{ include.email }}:</label
@@ -32,7 +25,7 @@
             />
         </div>
     </div>
-    <div class="mb-2">
+    <!--     <div class="mb-2">
         <label for="message" class="text-header bold"
             >{{ include.subject }}:</label
         >
@@ -43,7 +36,7 @@
             id="subject"
             name="subject"
         />
-    </div>
+    </div> -->
     <div class="mb-5">
         <label for="message" class="text-header bold"
             >{{ include.message }}:</label
