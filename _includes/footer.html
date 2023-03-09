@@ -75,7 +75,10 @@
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        {{site.data.copyright.text}}:
+        <span
+            >&copy; {{ site.time | date: '%Y' }}
+            {{site.data.copyright.text}}:</span
+        >
         <a class="text-white" href="{{site.data.copyright.url}}"
             >{{site.data.copyright.site}}</a
         >

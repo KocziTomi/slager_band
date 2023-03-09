@@ -228,6 +228,20 @@ function simp_startScript() {
             simp_a_index = index
             simp_changeAudio(this.querySelector('.simp-source'))
             simp_setAlbum(simp_a_index)
+
+            var eles = document.querySelector('.simp-plause').classList
+            if (simp_audio.paused) {
+                if (!simp_isLoaded) simp_loadAudio(simp_a_url[simp_a_index])
+                simp_audio.play()
+                simp_isPlaying = true
+                eles.remove('fa-play')
+                eles.add('fa-pause')
+            } else {
+                simp_audio.pause()
+                simp_isPlaying = false
+                eles.remove('fa-pause')
+                eles.add('fa-play')
+            }
         })
     })
 
