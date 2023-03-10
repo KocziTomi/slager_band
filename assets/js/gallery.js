@@ -76,12 +76,19 @@ $(document).ready(function () {
             ],
         })
 
-        //
-
         $('#exampleModal')
             .unbind()
             .on('hidden.bs.modal', function () {
                 $('#gallery-modal').data('owl.carousel').destroy()
             })
     })
+
+})
+
+
+$(document).on('show.bs.modal', '#exampleModal', function (e) {
+    console.log('HI')
+    if (window.innerWidth <= 1024) {
+        return e.preventDefault();
+    }
 })
