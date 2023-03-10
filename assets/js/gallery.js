@@ -1,3 +1,6 @@
+---
+---
+
 $(document).ready(function () {
     $('#gallery-onpage').owlCarousel({
         loop: true,
@@ -24,42 +27,8 @@ $(document).ready(function () {
 
     $('#gallery-onpage .item').on('click', function (e) {
         $('#gallery-modal').empty()
-        const media = {
-            pictures: [
-                {
-                    id: '1',
-                    url: 'http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=1',
-                    alt: '1',
-                },
-                {
-                    id: '2',
-                    url: 'http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=2',
-                    alt: '2',
-                },
-                {
-                    id: '3',
-                    url: 'http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=3',
-                    alt: '3',
-                },
-                {
-                    id: '4',
-                    url: 'http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=4',
-                    alt: '4',
-                },
-                {
-                    id: '5',
-                    url: 'http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=5',
-                    alt: '5',
-                },
-                {
-                    id: '6',
-                    url: 'http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=6',
-                    alt: '6',
-                },
-            ],
-            videos: [],
-        }
-
+        const media = {{ site.data.gallery.media | jsonify }}
+       
         const picturesArray = media.pictures
         const picturesArrayLength = media.pictures.length
         const targetIndex = e.target.id - 1
@@ -67,31 +36,16 @@ $(document).ready(function () {
         let html = ''
 
         for (let i = targetIndex; i < picturesArrayLength; i++) {
-            html +=
-                '<div class="item"> <img src="' +
-                picturesArray[i].url +
-                '" alt="' +
-                picturesArray[i].alt +
-                ' id="' +
-                picturesArray[i].id +
-                '"" /></div>'
+            html += `<div class="item"><img class="owl-lazy" data-src="${picturesArray[i].url}" alt="picture_${picturesArray[i].alt}" id="${picturesArray[i].id}" /></div>`
         }
 
         for (let i = 0; i < targetIndex; i++) {
-            html +=
-                '<div class="item"> <img src="' +
-                picturesArray[i].url +
-                '" alt="' +
-                picturesArray[i].alt +
-                ' id="' +
-                picturesArray[i].id +
-                '"" /></div>'
+            html += `<div class="item"><img class="owl-lazy" data-src="${picturesArray[i].url}" alt="picture_${picturesArray[i].alt}" id="${picturesArray[i].id}" /></div>`
         }
 
         $(html).appendTo('#gallery-modal')
 
         $('#gallery-modal').on('initialized.owl.carousel', function () {
-            $('#loader').fadeOut('slow')
             $('#gallery-modal').fadeIn()
         })
 
@@ -103,6 +57,7 @@ $(document).ready(function () {
             mouseDrag: false,
             singleItem: true,
             dots: false,
+            lazyLoad: true,
             responsive: {
                 0: {
                     items: 1,
