@@ -1,8 +1,17 @@
 <div class="col-12 col-carousel">
-    <div class="owl-carousel carousel-main">
+    <div class="owl-carousel carousel-main" id="{{include.id}}">
         {% for picture in site.data.gallery.media.pictures %}
-        <div>
-            <img src="{{picture.url}}" alt="{{picture.alt}}" />
+        <div
+            data-toggle="modal"
+            data-target="#exampleModal"
+            class="item cursor-pointer"
+            id="{{picture.id}}"
+        >
+            <img
+                src="{{picture.url}}"
+                alt="{{picture.alt}}"
+                id="{{picture.id}}"
+            />
         </div>
         {% endfor %}
     </div>
