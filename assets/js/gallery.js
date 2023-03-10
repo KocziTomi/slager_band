@@ -25,7 +25,11 @@ $(document).ready(function () {
         ],
     })
 
+
+
+    
     $('#gallery-onpage .item').on('click', function (e) {
+
         $('#gallery-modal').empty()
         const media = {{ site.data.gallery.media | jsonify }}
        
