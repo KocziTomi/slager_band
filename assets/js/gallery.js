@@ -87,7 +87,6 @@ $(document).ready(function () {
 
 
 $(document).on('show.bs.modal', '#exampleModal', function (e) {
-    console.log('HI')
     if (window.innerWidth <= 1024) {
         return e.preventDefault();
     }
