@@ -38,38 +38,44 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-    </head>
-    <body class="min-vh-100 d-flex flex-column bg-img">
-        {{ header }} {{ content }} {{ footer }}
         <script
+            defer
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
             integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         ></script>
         <script
+            defer
             src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
             integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         ></script>
         <script
+            defer
             src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
             integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
             crossorigin="anonymous"
         ></script>
         <script
+            defer
             src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
             integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
             crossorigin="anonymous"
         ></script>
         <script
+            defer
             type="text/javascript"
             src="{{ '/assets/js/gallery.js' | relative_url }}"
         ></script>
         <script
+            defer
             type="text/javascript"
             src="{{ '/assets/js/playlist.js' | relative_url }}"
         ></script>
+    </head>
+    <body class="min-vh-100 d-flex flex-column bg-img">
+        {{ header }} {{ content }} {{ footer }}
     </body>
 </html>

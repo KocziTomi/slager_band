@@ -3,13 +3,12 @@
         class="d-flex justify-content-between flex-wrap flex-column flex-lg-row"
     >
         {% for member in site.data.members.members %}
-        <div class="d-flex inner mb-4">
-            <div class="col-2 grow">
+        <div class="d-flex inner mb-4 px-3">
+            <div class="col-2 grow profile-pic-wrapper">
                 <img
-                    src="{{member.picture.url}}"
+                    src="{{ member.picture.url | relative_url }}"
                     alt="{{member.picture.alt}}"
-                    width="100"
-                    class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+                    class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm thumbnail"
                 />
             </div>
             <div class="col mx-3">

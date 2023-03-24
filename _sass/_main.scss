@@ -42,6 +42,9 @@
 .h-200 {
     height: 200px;
 }
+.h-300 {
+    height: 300px;
+}
 .h-400 {
     height: 400px;
 }
@@ -110,4 +113,19 @@ textarea:focus {
     box-shadow: 0 0 5px #594433 !important;
     padding: 3px 0px 3px 3px !important;
     margin: 5px 1px 3px 0px !important;
+}
+
+.profile-pic-wrapper {
+    height: 120px;
+    width: 120px;
+}
+
+.thumbnail {
+    height: 100%;
+    width: 100%;
+    background-color: #cfa96d;
+}
+
+.text-justify {
+    text-align: justify;
 }
