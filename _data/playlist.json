@@ -1,3 +1,40 @@
 {
-    "header": "Repertoár"
+    "header": "Repertoár",
+    "songs": [
+        {
+            "title": "Reptér",
+            "author": "Korda György (SlágerBand cover)",
+            "url": "https://ia601607.us.archive.org/13/items/pam-pam/Rept%C3%A9r%203%20szerkesztett.mp3"
+        },
+        {
+            "title": "Pam Pam",
+            "author": "",
+            "url": "https://ia601607.us.archive.org/13/items/pam-pam/Pam-Pam.mp3"
+        },
+        {
+            "title": "Mindenki valakié",
+            "author": "Charlie (SlágerBand cover)",
+            "url": "https://ia601607.us.archive.org/13/items/pam-pam/Mindenki%20valaki%C3%A9%202%20szerkesztett.mp3"
+        },
+        {
+            "title": "Jöjj velem",
+            "author": "Peter Srámek (SlágerBand cover)",
+            "url": "https://ia601607.us.archive.org/13/items/pam-pam/J%C3%B6jj%20velem%20cover%20Sl%C3%A1gerBand.mp3"
+        },
+        {
+            "title": "I love you Baby",
+            "author": "",
+            "url": "https://ia801607.us.archive.org/13/items/pam-pam/I%20Love%20You%20Babe%20J%C3%B3.mp3"
+        },
+        {
+            "title": "Hej tükör",
+            "author": "",
+            "url": "https://ia601607.us.archive.org/13/items/pam-pam/Hej%20T%C3%BCk%C3%B6r.mp3"
+        },
+        {
+            "title": "Becsaptál",
+            "author": "",
+            "url": "https://ia801607.us.archive.org/13/items/pam-pam/Becsapt%C3%A1l%2022%20jav.mp3"
+        }
+    ]
 }

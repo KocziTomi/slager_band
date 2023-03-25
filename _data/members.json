@@ -3,7 +3,7 @@
     "members": [
         {
             "picture": {
-                "url": "https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg",
+                "url": "/assets/images/kocziany_antal.jpg",
                 "alt": "1"
             },
             "name": "Kocziány Antal",
@@ -16,7 +16,7 @@
                 "alt": "1"
             },
             "name": "Oberritter Ferenc",
-            "instrument": "Dob",
+            "instrument": "Ének, Szaxafon, Harmónika",
             "text": "Klasszikus zenei tanulmányaimat a Pécsi Zeneművészeti Főiskolán klarinét tanszakánvégeztem. Tanárom Paláncz Tamás volt. Klarinét és szaxofon hang zásvilágom olyan világhíres jazz zenészek hatására alakúlt ki mint Benny Goodman, Pete Fontain, vagy Stain Getz, Scott Hamilton. Hangszeres tudásom mellett előszeretettel énekelek Angolul, Olaszul, Magyarul. Zenei tudásom által sok-sok hazai illetve külföldi fellépésekre is eljutottam így zenélhettem Norvégiában, Lengyelországban, Németoszágban, Ausztriában. Lehetőségem nyílt hazai és külföldi sztárokkal egy színpadon zenélni! A zene meghatározó része az életemnek!"
         },
         {
@@ -30,12 +30,12 @@
         },
         {
             "picture": {
-                "url": "https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg",
+                "url": "/assets/images/lakatos_tibor.jpg",
                 "alt": "1"
             },
-            "name": "Manuella Nevoresky",
-            "instrument": "Dob",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget pulvinar arcu, a vulputate risus. Aenean lobortis pretium lorem sollicitudin ornare. Sed vitae augue mollis, viverra dui et, consequat diam."
+            "name": "Lakatos Tibor",
+            "instrument": "Szintetizátor, Ének",
+            "text": "1991-ben keztem zongorázni tanulni a pécsi zeneiskola zongora szakán. Később a szintetizátorok hangzásvilága ejtett rabul. Sok pécsi feltörekvő zenekarban játszottam szintetizátorosként, ezek a fellépések fejlesztették hangszeres tudásomat színpadi rutinomat."
         },
         {
             "picture": {
