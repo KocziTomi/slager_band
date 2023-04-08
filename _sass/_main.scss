@@ -8,6 +8,9 @@
 .cursor-pointer {
     cursor: pointer;
 }
+.cursor-default {
+    cursor: default;
+}
 .custom-font {
     font-family: 'Kavoon';
 }
@@ -129,3 +132,6 @@ textarea:focus {
 .text-justify {
     text-align: justify;
 }
+span.blockspam {
+    display: none;
+  }

@@ -13,6 +13,8 @@
                     class="btn btn-outline-light btn-floating m-1 rounded-0"
                     href="https://www.facebook.com/profile.php?id=100091895130745"
                     role="button"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     ><i class="fa fa-facebook-f icon-w-16"></i
                 ></a>
 
@@ -21,6 +23,8 @@
                     class="btn btn-outline-light btn-floating m-1 rounded-0"
                     href="https://www.youtube.com/@SlagerBand"
                     role="button"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     ><i class="fa fa-youtube icon-w-16"></i
                 ></a>
             </section>
@@ -29,23 +33,22 @@
             <section class="d-flex">
                 <!-- Email -->
                 <span class="d-flex align-items-center me-4">
-                    <a
-                        class="btn btn-outline-light btn-floating m-1 rounded-0"
-                        href="#!"
-                        role="button"
+                    <span
+                        class="btn btn-outline-light btn-floating m-1 rounded-0 cursor-default"
                         ><i class="fa fa-envelope icon-w-16"></i
-                    ></a>
-                    <div class="ps-1">{{site.data.contact.email}}</div>
+                    ></span>
+                    <div class="ps-1">
+                        <span class="blockspam" aria-hidden="true"></span
+                        >slagerbandzenekar@<!-- protectmail -->gmail.com
+                    </div>
                 </span>
 
                 <!--Phone -->
                 <span class="d-flex align-items-center">
-                    <a
-                        class="btn btn-outline-light btn-floating m-1 rounded-0"
-                        href="#!"
-                        role="button"
+                    <span
+                        class="btn btn-outline-light btn-floating m-1 rounded-0 cursor-default"
                         ><i class="fa fa-phone icon-w-16"></i
-                    ></a>
+                    ></span>
                     <div class="ps-1">{{site.data.contact.phone}}</div>
                 </span>
             </section>
