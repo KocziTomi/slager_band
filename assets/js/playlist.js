@@ -387,15 +387,15 @@ if (document.querySelector('#simp')) {
         '<div class="simp-display"><div class="simp-album w-full flex-wrap"><div class="simp-cover"><i class="fa fa-music fa-5x"></i></div><div class="simp-info"><div class="simp-title">Title</div><div class="simp-artist">Artist</div></div></div></div>'
     simp_elem += '<div class="simp-controls flex-wrap flex-align">'
     simp_elem +=
-        '<div class="simp-plauseward flex flex-align"><button type="button" class="simp-prev fa fa-backward" disabled></button><button type="button" class="simp-plause fa fa-play" disabled></button><button type="button" class="simp-next fa fa-forward" disabled></button></div>'
+        '<div class="simp-plauseward flex flex-align"><button type="button" id="previous" aria-label="Previous" class="simp-prev fa fa-backward" disabled></button><button type="button" id="pauseandplay" aria-label="Pause and play" class="simp-plause fa fa-play" disabled></button><button type="button" id="next" aria-label="Next" class="simp-next fa fa-forward" disabled></button></div>'
     simp_elem +=
-        '<div class="simp-tracker simp-load"><input class="simp-progress" type="range" min="0" max="100" value="0" disabled/><div class="simp-buffer"></div></div>'
+        '<div class="simp-tracker simp-load"><input class="simp-progress" aria-label="Music progress bar" type="range" min="0" max="100" value="0" disabled/><div class="simp-buffer"></div></div>'
     simp_elem +=
         '<div class="simp-time flex flex-align"><span class="start-time">00:00</span><span class="simp-slash"> / </span><span class="end-time">00:00</span></div>'
     simp_elem +=
-        '<div class="simp-volume flex flex-align"><button type="button" class="simp-mute fa fa-volume-up"></button><input class="simp-v-slider" type="range" min="0" max="100" value="100"/></div>'
+        '<div class="simp-volume flex flex-align"><button type="button" id="volume" aria-label="Volume" class="simp-mute fa fa-volume-up"></button><input class="simp-v-slider" aria-label="Music volume bar" type="range" min="0" max="100" value="100"/></div>'
     simp_elem +=
-        '<div class="simp-others flex flex-align"><button type="button" class="simp-plext fa fa-play-circle" title="Auto Play"></button><button type="button" class="simp-random fa fa-random" title="Random"></button><div class="simp-shide"></div></div>'
+        '<div class="simp-others flex flex-align"><button type="button" id="autoplay" aria-label="Autoplay" class="simp-plext fa fa-play-circle" title="Auto Play"></button><button type="button" id="random" aria-label="Random" class="simp-random fa fa-random" title="Random"></button><div class="simp-shide"></div></div>'
     simp_elem += '</div>' //simp-controls
 
     var simp_player = document.createElement('div')

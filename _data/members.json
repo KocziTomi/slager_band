@@ -3,7 +3,7 @@
     "members": [
         {
             "picture": {
-                "url": "/assets/images/kocziany_antal.png",
+                "url": "/assets/images/kocziany_antal.jpg",
                 "alt": "kocziany_antal"
             },
             "name": "Kocziány Antal",
@@ -12,7 +12,7 @@
         },
         {
             "picture": {
-                "url": "/assets/images/oberritter_ferenc.png",
+                "url": "/assets/images/oberritter_ferenc.jpg",
                 "alt": "oberritter_ferenc"
             },
             "name": "Oberritter Ferenc",
@@ -21,7 +21,7 @@
         },
         {
             "picture": {
-                "url": "/assets/images/szokolai_zsolt.png",
+                "url": "/assets/images/szokolai_zsolt.jpg",
                 "alt": "szokolai_zsolt"
             },
             "name": "Szokolai Zsolt",
@@ -30,7 +30,7 @@
         },
         {
             "picture": {
-                "url": "/assets/images/lakatos_tibor.png",
+                "url": "/assets/images/lakatos_tibor.jpg",
                 "alt": "lakatos_tibor"
             },
             "name": "Lakatos Tibor",
@@ -39,7 +39,7 @@
         },
         {
             "picture": {
-                "url": "/assets/images/hetyei_zoltan.png",
+                "url": "/assets/images/hetyei_zoltan.jpg",
                 "alt": "hetyei_zoltan"
             },
             "name": "Hetyei Zoltán",

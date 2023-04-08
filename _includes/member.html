@@ -9,11 +9,13 @@
                     src="{{ member.picture.url | relative_url }}"
                     alt="{{ member.picture.alt }}"
                     class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm thumbnail"
+                    width="120"
+                    height="120"
                 />
             </div>
             <div class="col mx-3">
-                <h5 class="mb-2 bold text-header">{{member.name}}</h5>
-                <h6 class="mb-3">{{member.instrument}}</h6>
+                <h2 class="mb-2 bold text-header">{{member.name}}</h2>
+                <h3 class="mb-3">{{member.instrument}}</h3>
                 <p class="text-justify">{{member.text}}</p>
             </div>
         </div>
