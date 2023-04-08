@@ -1,5 +1,5 @@
 ---
-title: Sláger band
+title: SlágerBand
 layout: default
 CTA: button.html
 ---
