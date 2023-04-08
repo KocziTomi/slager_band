@@ -3,8 +3,8 @@
     "members": [
         {
             "picture": {
-                "url": "/assets/images/kocziany_antal.jpg",
-                "alt": "1"
+                "url": "/assets/images/kocziany_antal.png",
+                "alt": "kocziany_antal"
             },
             "name": "Kocziány Antal",
             "instrument": "Dob",
@@ -12,8 +12,8 @@
         },
         {
             "picture": {
-                "url": "/assets/images/oberritter_ferenc.jpg",
-                "alt": "1"
+                "url": "/assets/images/oberritter_ferenc.png",
+                "alt": "oberritter_ferenc"
             },
             "name": "Oberritter Ferenc",
             "instrument": "Ének, Szaxafon, Harmónika",
@@ -21,8 +21,8 @@
         },
         {
             "picture": {
-                "url": "https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg",
-                "alt": "1"
+                "url": "/assets/images/szokolai_zsolt.png",
+                "alt": "szokolai_zsolt"
             },
             "name": "Szokolai Zsolt",
             "instrument": "Gitár",
@@ -30,8 +30,8 @@
         },
         {
             "picture": {
-                "url": "/assets/images/lakatos_tibor.jpg",
-                "alt": "1"
+                "url": "/assets/images/lakatos_tibor.png",
+                "alt": "lakatos_tibor"
             },
             "name": "Lakatos Tibor",
             "instrument": "Szintetizátor, Ének",
@@ -39,12 +39,12 @@
         },
         {
             "picture": {
-                "url": "https://bootstrapious.com/i/snippets/sn-team/teacher-4.jpg",
-                "alt": "1"
+                "url": "/assets/images/hetyei_zoltan.png",
+                "alt": "hetyei_zoltan"
             },
-            "name": "Manuella Nevoresky",
-            "instrument": "Dob",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget pulvinar arcu, a vulputate risus. Aenean lobortis pretium lorem sollicitudin ornare. Sed vitae augue mollis, viverra dui et, consequat diam."
+            "name": "Hetyei Zoltán",
+            "instrument": "Basszusgitár",
+            "text": "1980-ban kezdtem zenei pályafutásomat, akkor még harmónikásként. Aztán hosszabb kihagyás után jött a nagy szerelem, a basszusgitár. Jó tanáraim voltak, Porvay György, majd Baksa Péter. Így a fő irány a jazz lett, no meg egy kis blues. Zenéltem a BB. King emlékkoncerten Pécsen, a Bodor Blues Band-ben, illetve Olaszországban, az Orfei cirkuszban."
         }
     ]
 }

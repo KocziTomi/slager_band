@@ -121,8 +121,8 @@ textarea:focus {
 }
 
 .thumbnail {
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
     background-color: #cfa96d;
 }
 
