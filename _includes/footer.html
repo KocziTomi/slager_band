@@ -69,7 +69,11 @@
             >&copy; {{ site.time | date: '%Y' }}
             {{site.data.copyright.text}}:</span
         >
-        <a class="text-white" href="{{site.data.copyright.url}}"
+        <a
+            class="text-white"
+            href="{{site.url}}"
+            target="_blank"
+            rel="noopener noreferrer"
             >{{site.data.copyright.site}}</a
         >
     </div>
