@@ -20,10 +20,16 @@
 
 title: SlágerBand
 email: slagerbandzenekar@gmail.com
+tagline: Kiváló zenekar esküvők, bálok, partyk zenei lebonyolítására
+locale: hu_HU
+social:
+    name: SlágerBand
+    links:
+        - https://www.youtube.com/@SlagerBand
+        - https://www.facebook.com/profile.php?id=100091895130745
+logo: /assets/images/logo.svg
 description: >- # this means to ignore newlines until "baseurl:"
-    Write an awesome description for your new site here. You can edit this
-    line in _config.yml. It will appear in your document head meta (for
-    Google search results) and in your feed.xml site description.
+    A slagerband.hu weboldal egy kiváló választás minden olyan eseményhez, amelyhez élő zenei szolgáltatásra van szükség. Esküvők, bálok, partyk zenei szolgáltatását vállaljuk. Professzionális hangtechnikával rendelkezünk, amelyeket tanult zenészek szólaltatnak meg
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'slagerband.hu' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
@@ -31,6 +37,7 @@ github_username: jekyll
 
 # Build settings
 plugins:
+    - jekyll-seo-tag
 
 sass:
     sass_dir: _sass

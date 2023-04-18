@@ -6,3 +6,5 @@ gem "webrick", "~> 1.8"
 
 # DEPLOY
 #gem "github-pages"
+
+gem "jekyll-seo-tag", "~> 2.8"
