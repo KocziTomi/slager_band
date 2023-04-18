@@ -31,7 +31,7 @@ logo: /assets/images/logo.svg
 description: >- # this means to ignore newlines until "baseurl:"
     A slagerband.hu weboldal egy kiváló választás minden olyan eseményhez, amelyhez élő zenei szolgáltatásra van szükség. Esküvők, bálok, partyk zenei szolgáltatását vállaljuk. Professzionális hangtechnikával rendelkezünk, amelyeket tanult zenészek szólaltatnak meg
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'slagerband.hu' # the base hostname & protocol for your site, e.g. http://example.com
+url: 'https://slagerband.hu' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username: jekyll
 
