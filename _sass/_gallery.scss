@@ -32,14 +32,53 @@ button:active {
     outline: none;
 }
 
+.owl-stage {
+    display: flex;
+}
+
 .item,
 .owl-item {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.owl-carousel .owl-item img {
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.owl-carousel .owl-video-tn {
+    background-size: cover !important;
+}
+
+.owl-video-frame {
+    position: relative;
+    /*     padding-bottom: 56.25%;
+    padding-top: 25px; */
+    height: 0;
+}
+.owl-video-frame a {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
 
-.owl-carousel .owl-item img {
-    display: block;
-    width: 100%;
-    height: 100%;
+.owl-carousel .owl-video-wrapper {
+    position: inherit !important;
+}
+
+.modal {
+    .item,
+    .owl-item {
+        width: 100%;
+    }
+
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 }

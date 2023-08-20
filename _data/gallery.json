@@ -1,38 +1,21 @@
 {
     "header": "Galéria",
-    "media": {
-        "pictures": [
-            {
-                "id": "1",
-                "url": "http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=1",
-                "alt": "1"
-            },
-            {
-                "id": "2",
-                "url": "http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=2",
-                "alt": "2"
-            },
-            {
-                "id": "3",
-                "url": "http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=3",
-                "alt": "3"
-            },
-            {
-                "id": "4",
-                "url": "http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=4",
-                "alt": "4"
-            },
-            {
-                "id": "5",
-                "url": "http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=5",
-                "alt": "5"
-            },
-            {
-                "id": "6",
-                "url": "http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=6",
-                "alt": "6"
-            }
-        ],
-        "videos": []
-    }
+    "media": [
+        {
+            "id": "1",
+            "url": "/assets/images/gallery/1.jpg",
+            "alt": "1"
+        },
+        {
+            "id": "2",
+            "url": "/assets/images/gallery/2.jpg",
+            "alt": "2"
+        },
+        {
+            "id": "3",
+            "url": "https://www.youtube.com/embed/TdZuoG5gj30",
+            "title": "SlágerBand mulatós-lakodalmas",
+            "video": true
+        }
+    ]
 }

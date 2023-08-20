@@ -1,18 +1,23 @@
 <div class="col-12 col-carousel">
     <div class="owl-carousel carousel-main" id="{{include.id}}">
-        {% for picture in site.data.gallery.media.pictures %}
+        {% for item in site.data.gallery.media %} {% if item.video %}
+        <iframe
+            style="width: 100%"
+            id="{{item.id}}"
+            src="{{item.url}}"
+            title="{{item.title}}"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        {% else %}
         <div
             data-toggle="modal"
             data-target="#exampleModal"
             class="item cursor-pointer"
-            id="{{picture.id}}"
+            id="{{item.id}}"
         >
-            <img
-                src="{{picture.url}}"
-                alt="{{picture.alt}}"
-                id="{{picture.id}}"
-            />
+            <img src="{{item.url}}" alt="{{item.alt}}" id="{{item.id}}" />
         </div>
-        {% endfor %}
+        {% endif %} {% endfor %}
     </div>
 </div>

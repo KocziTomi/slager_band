@@ -2,15 +2,45 @@
 ---
 
 $(document).ready(function () {
+
+    function reset_video_size(video_width){
+        //better use jquery selectors: owl.items() and $(owl.items()) give problems, don't know why
+        var items = $('.owl-item:not([data-video])');
+        var videos = $('.owl-video-wrapper');
+        var v_height = 0;
+      
+        //user-defined width ELSE, width from inline css (when owl.autoWidth == false), 
+        //ELSE, computed innerwidth of the first element.
+        var v_width = (video_width) ? video_width : ((items.css('width') != 'auto') ? items.css('width') : items.innerWidth());
+      
+        items.each(function(){
+          var h = $(this).innerHeight();
+          if(h > v_height) v_height = h;
+        });
+      
+        
+        videos.css({ 'height':v_height, 'width':v_width });
+    };
+
     $('#gallery-onpage').owlCarousel({
         loop: true,
         margin: 10,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
         nav: true,
         dots: false,
         touchDrag: false,
         mouseDrag: false,
+        video:true,
+        checkVisible: false,
+        onInitialized: function(){ reset_video_size(); },
+        onResized: function(){ reset_video_size(); },
+        onTranslate: function() {
+            $('.owl-item').find('video').each(function() {
+                this.pause();
+            });
+        },
+        responsiveRefreshRate: 100,
         responsive: {
             0: {
                 items: 1,
@@ -24,33 +54,58 @@ $(document).ready(function () {
             '<span class="fa fa-chevron-right fa-2x"></span>',
         ],
     })
-
-
-
     
     $('#gallery-onpage .item').on('click', function (e) {
-
-        $('#gallery-modal').empty()
-        const media = {{ site.data.gallery.media | jsonify }}
-       
-        const picturesArray = media.pictures
-        const picturesArrayLength = media.pictures.length
+        const mediaArray = {{ site.data.gallery.media | jsonify }}
+        const mediaArrayLength = mediaArray.length
         const targetIndex = e.target.id - 1
 
         let html = ''
 
-        for (let i = targetIndex; i < picturesArrayLength; i++) {
-            html += `<div class="item"><img class="owl-lazy" data-src="${picturesArray[i].url}" alt="picture_${picturesArray[i].alt}" id="${picturesArray[i].id}" /></div>`
+        for (let i = targetIndex; i < mediaArrayLength; i++) {
+            if(mediaArray[i].video) {
+                html += 
+                `<div class="video-container not-visible">
+                    <iframe
+                        width="1257" 
+                        height="707"
+                        id=${mediaArray[i].id}
+                        src="${mediaArray[i].url}"
+                        title="${mediaArray[i].title}"
+                        frameborder="0"
+                        allowfullscreen
+                    ></iframe>
+                </div>`
+            } else {
+                html += `<div class="item"><img class="owl-lazy not-visible" data-src="${mediaArray[i].url}" alt="picture_${mediaArray[i].alt}" id="${mediaArray[i].id}" /></div>`
+            }
         }
 
         for (let i = 0; i < targetIndex; i++) {
-            html += `<div class="item"><img class="owl-lazy" data-src="${picturesArray[i].url}" alt="picture_${picturesArray[i].alt}" id="${picturesArray[i].id}" /></div>`
+            if(mediaArray[i].video) {
+                html += 
+                `<div class="video-container not-visible">
+                    <iframe
+                        width="1257" 
+                        height="707"
+                        id=${mediaArray[i].id}
+                        src="${mediaArray[i].url}"
+                        title="${mediaArray[i].title}"
+                        frameborder="0"
+                        allowfullscreen
+                    ></iframe>
+                </div>`
+            } else {
+                html += `<div class="item"><img class="owl-lazy not-visible" data-src="${mediaArray[i].url}" alt="picture_${mediaArray[i].alt}" id="${mediaArray[i].id}" /></div>`
+            }
         }
 
-        $(html).appendTo('#gallery-modal')
+        $('#gallery-modal').append(html)
 
-        $('#gallery-modal').on('initialized.owl.carousel', function () {
-            $('#gallery-modal').fadeIn()
+        $('#gallery-modal').on('initialize.owl.carousel', function () {
+            $('#gallery-modal').hide().fadeIn()
+            $('#gallery-modal').find('.not-visible').addClass('visible')
+            $('#gallery-modal').find('.not-visible').removeClass('not-visible')
         })
 
         $('#gallery-modal').owlCarousel({
@@ -75,14 +130,7 @@ $(document).ready(function () {
                 '<span class="fa fa-chevron-right fa-2x"></span>',
             ],
         })
-
-        $('#exampleModal')
-            .unbind()
-            .on('hidden.bs.modal', function () {
-                $('#gallery-modal').data('owl.carousel').destroy()
-            })
     })
-
 })
 
 
@@ -90,4 +138,11 @@ $(document).on('show.bs.modal', '#exampleModal', function (e) {
     if (window.innerWidth <= 1024) {
         return e.preventDefault();
     }
+})
+
+$('#exampleModal')
+.unbind()
+.on('hide.bs.modal', function () {
+    $('#gallery-modal').empty()
+    $('#gallery-modal').trigger('destroy.owl.carousel');
 })
